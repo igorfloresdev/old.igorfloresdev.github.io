@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <title>Igor Flores - Desenvolvedor FrontEnd</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-menu">
+      <ul>
+        <li><a href="#inicio" ">Inicio</a></li>
+        <li><a href=" #experiencia">Experiência</a></li>
+        <li><a href="#graduacao">Graduação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-info container" id="inicio">
+      <div class="header-titulo">
+        <h1>IGOR FLORES</h1>
+        <h2>&#60;WEB DESIGNER & DESENVOLVEDOR FRONT-END &#47;&#62;</h2>
+      </div>
+      <img src="img/perfil.jpg" alt="Minha foto de perfil">
+    </div>
+  </header>
+  <section class="section-experiencia" id="experiencia" aria-label="experiencia">
+    <div class="experiencias container">
+      <img src="img/experiencia.svg">
+      <h2>&#60;EXPERIÊNCIAS &#47;&#62;</h2>
+      <div class="experiencias-itens">
+        <div class="itens">
+          <span>2016 - 2018</span>
+          <h3>Estágiário de Suporte Técnico</h3>
+          <p>Realização de serviços de manutenção de computadores,
+            impressoras, instalação de programas, manutenção e configuração de servidores Active Directory e outros equipamentos.
+            <br><br>
+            Empresa: R.R Consultoria
+          </p>
+        </div>
+        <div class="itens">
+          <span>2018 - 2019</span>
+          <h3>Consultor de Sistemas </h3>
+          <p>Realização de consultoria do sistema de ERP Protheus desenvolvido pela Totvs, atuando nos módulos de Plano de Saúde, Financeiro, Contabilidade e outros. Adequando o sistema ás regras de negócio do cliente e vice-versa.
+            <br><br>
+            Empresa: R.R Consultoria
+          </p>
+        </div>
+        <div class="itens">
+          <span>2019 - 2021</span>
+          <h3>Analista de Sistemas</h3>
+          <p>Realização de análise do sistema de gestão TopSaúde buscando soluções para adequação do sistema, à regra de negócio da empresa e também buscando correções para erros no software.
+            <br><br>
+            Além disso também eram estudadas e criadas soluções internas relacionadas a sofwares, hardwares e infraestrutura de redes.
+            <br><br>
+            Empresa: CAMARJ
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="graduacao container" id="graduacao" aria-label="graduação">
+    <div class="graduacao-info">
+      <div class="graduacao-item">
+        <h3>Sistemas de Informação</h3>
+        <p>Formado em 2020 como bacharel em Sistemas de Informação pela Universidade Estácio de Sá (UNESA).</p>
+      </div>
+    </div>
+    <h2>GRADUAÇÃO</h2>
+    <h2>CURSOS INTENSIVOS</h2>
+    <div class="cursos-info">
+      <ul>
+        <li>Web Design Completo - Origamid <strong>44H</strong></li>
+        <li>HTML e CSS - Origamid <strong>46H</strong></li>
+        <li>Lógica de Programação - Bradesco <strong>37H</strong></li>
+        <li>CSS Flexbox - Origamid <strong>6H</strong></li>
+      </ul>
+    </div>
+    <div class="idiomas-info">
+      <ul>
+        <li>Inglês - Nível: Avançado <strong>30H</strong></li>
+      </ul>
+    </div>
+    <h2>IDIOMAS</h2>
+  </section>
+  <section class="projetos" id="projetos" aria-label="projetos">
+    <h2>&#60;PROJETOS &#47;&#62;</h2>
+    <div class="projetos-itens container">
+      <div class="item">
+        <a href="https://igorfloresdev.github.io/lobo/" target="_blank">
+          <img src="img/lobo.PNG">
+          <h3>Lobo</h3>
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="https://igorfloresdev.github.io/flexblog/" target="_blank">
+          <img src="img/flexblog.PNG">
+          <h3>Flex-Blog</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="contato container" id="contato" aria-label="contato">
+    <h2>&#60;CONTATO &#47;&#62;</h2>
+    <form>
+      <div class="col">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="empresa">Empresa (Opcional):</label>
+        <input type="text" id="empresa" name="empresa">
+        <label for="telefone">Telefone (Opcional):</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+      <div class="col">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button>Enviar</button>
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <p>Igor Flores © Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/functions.js"></script>
+</body>
+
+</html>

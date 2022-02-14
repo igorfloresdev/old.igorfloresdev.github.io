@@ -1,0 +1,104 @@
+.graduacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 40px;
+}
+
+.graduacao-info {
+  background-color: #ffffff;
+  display: grid;
+  height: 400px;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.graduacao-item h3 {
+  padding: 0 0 30px 65px;
+  position: relative;
+}
+
+.graduacao-item h3::before {
+  content: "";
+  display: block;
+  background: url(../img/graduacao.png) no-repeat center center;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+}
+
+.graduacao h2 {
+  align-self: center;
+  justify-self: center;
+  font-size: 3.875rem;
+  color: #909090;
+}
+
+.cursos-info {
+  background-color: #ffffff;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+}
+
+.cursos-info ul li {
+  display: block;
+  margin: 50px 0;
+  position: relative;
+  margin-left: 50px;
+}
+
+.cursos-info ul li:before {
+  content: url(../img/livro.png);
+  position: absolute;
+  left: -40px;
+  top: -8px;
+}
+
+.idiomas-info {
+  background-color: #ffffff;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+}
+
+.idiomas-info ul li {
+  display: block;
+  position: relative;
+  margin-left: 50px;
+}
+
+.idiomas-info ul li:before {
+  content: url(../img/idioma.png);
+  position: absolute;
+  left: -40px;
+  top: -8px;
+}
+
+@media (max-width: 1000px) {
+  .graduacao h2 {
+    font-size: 2.857rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .graduacao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .graduacao h2 {
+    color: #ffffff;
+  }
+
+  .graduacao-info {
+    grid-row: 2;
+  }
+
+  .idiomas-info {
+    grid-row: 6;
+  }
+}
