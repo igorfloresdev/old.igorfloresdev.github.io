@@ -15,6 +15,10 @@
   display: block;
 }
 
+.fechar-mobile {
+  display: none;
+}
+
 .header-info {
   display: grid;
   gap: 50px;
@@ -79,6 +83,46 @@
   }
 
   .header-menu {
-    justify-content: center;
+    display: grid;
+    justify-content: right;
+    padding-right: 30px;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .fechar-mobile {
+    justify-self: right;
+    padding-right: 45px;
+  }
+
+  .fechar-mobile svg {
+    width: 40px;
+    height: auto;
+  }
+
+  .header-menu ul {
+    display: none;
+    grid-template-rows: repeat(8, 1fr);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background: #000000ef;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .header-menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .header-menu a {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
   }
 }
