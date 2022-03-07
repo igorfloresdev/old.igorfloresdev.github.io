@@ -17,18 +17,34 @@
 }
 
 .projetos-itens .item {
+  border: 2px solid #000000;
+  border-radius: 8px;
+  position: relative;
+}
+
+.projetos-itens .item-img img {
   width: 278px;
   height: 278px;
-  border: 2px solid #000000;
-  background: #0a0a0a;
-  border-radius: 8px;
+  object-fit: cover;
 }
 
-.projetos-itens .item img {
-  margin-bottom: 20px;
+.projetos-itens .item .item-titulo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  background-color: #0a0a0a;
+  transition: 0.3s;
 }
 
-.projetos-itens .item h3 {
+.projetos-itens .item:hover .item-titulo {
+  height: 90px;
+}
+
+.projetos-itens .item .item-titulo h3 {
   text-align: center;
   color: #ffffff;
 }

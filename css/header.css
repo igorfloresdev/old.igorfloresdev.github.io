@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 20px 0 13px 0px;
 }
 
 .menu-mobile {
@@ -13,6 +13,20 @@
 .header-menu li a {
   padding: 15px;
   display: block;
+  position: relative;
+}
+
+.header-menu li a::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 4px;
+  border-bottom: 3px solid #2a2a2a;
+  transition: 0.3s;
+}
+
+.header-menu li a:hover::after {
+  width: 110%;
 }
 
 .fechar-mobile {
