@@ -152,4 +152,8 @@
     color: #ffffff;
     font-size: 2rem;
   }
+
+  .header-menu li a::after {
+    display: none;
+  }
 }
